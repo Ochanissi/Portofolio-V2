@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://ochanissi.com",
   },
-  title: "Mirel Bițoi - Full-Stack Developer",
+  title: "Mirel Bițoi — Full-Stack Developer",
   description:
     "Mirel Bițoi is a Full-Stack Developer working in Bucharest, Romania.",
   keywords:
@@ -29,10 +29,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Alexander Meikopoulos",
-  },
 };
 
 export default function RootLayout({
@@ -43,7 +39,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>{children}</body>
-      <Analytics />
+      {/* // TODO: Mirel */}
+      {/* <Analytics /> */}
     </html>
   );
 }
+
+// TODO: Mirel
+// TODOs
+// aria labels
+
+// text-white/80
+// favicon
