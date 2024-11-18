@@ -51,3 +51,4 @@ export default function RootLayout({
 
 // text-white/80
 // favicon
+// logo si banner alb si albastru - alb - negru

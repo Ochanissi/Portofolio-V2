@@ -32,7 +32,7 @@ type ContactItem = {
 const contactItems: ContactItem[] = [
   { icon: <GitHubIcon />, href: "https://github.com/Ochanissi/" },
   { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/mirelbitoi/" },
-  { icon: <LanguageIcon />, href: "https://www.ochanissi.com/" },
+  // { icon: <LanguageIcon />, href: "https://www.ochanissi.com/" },
   { icon: <EmailIcon />, href: "mailto:mirelbitoi@ochanissi.com" },
   { icon: <PhoneIcon />, href: "tel:+40729223562" },
   { icon: <Resume />, href: "Mirel_Bitoi_Resume.pdf/" },
@@ -71,7 +71,7 @@ export default function Nav() {
         <h2 className="mt-3 text-lg font-medium sm:text-xl">
           Full-Stack Developer
         </h2>
-        <p className="mt-4 text-foreground/80">
+        <p className="mt-4 text-foreground/80 max-w-[360px]">
           Full-Stack Developer with 4+ years of hands-on experience creating
           end-to-end web applications that deliver seamless user experiences.
         </p>
