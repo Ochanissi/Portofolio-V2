@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <main className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-24 gap-8">
           <About />
           <Experience />
+          <Footer />
           {/* <ExpCard />
           <Projects />
           <Contact />

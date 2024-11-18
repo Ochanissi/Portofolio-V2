@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable */
 
 export default function About() {
@@ -9,8 +8,8 @@ export default function About() {
           About
         </h2>
       </div>
-      <div className="flex flex-col gap-4">
-        <p className="text-start text-muted-foreground lg:px-6">
+      <div className="flex flex-col gap-4 lg:px-6">
+        <p>
           Throughout my journey from coding to design, I've been guided by a
           simple belief:{" "}
           <span className="text-white">
@@ -19,7 +18,7 @@ export default function About() {
           At the crossroads of AI, Web3, and Finance, I focus on creating user
           experiences that make complex ideas accessible.
         </p>
-        <p className="text-start  text-muted-foreground lg:px-6">
+        <p>
           Currently, I'm leading product design at a stealth AI startup that's
           rethinking how we interact with money. I'm also steering the design
           team at{" "}
@@ -44,7 +43,7 @@ export default function About() {
           , I've helped build a meta-aggregation engine used daily by thousands
           of users.
         </p>
-        <p className="text-start text-muted-foreground lg:px-6">
+        <p>
           Across all the applications I've been involved with, I've had the
           privilege to contribute in facilitating billions in transaction
           volume. I believe in making technology feel human—designing

@@ -6,33 +6,47 @@ export type ExperienceCardProps = {
   description: string[];
   company: string;
   skills: string[];
+  href?: string;
 };
 
 export function ExperienceCard(props: ExperienceCardProps) {
-  const { period, position, company, description, skills } = props;
+  const { period, position, company, description, skills, href } = props;
 
   return (
-    <div className="rounded-lg border bg-card text-card-foreground shadow-sm lg:p-6 mb-4 flex flex-col lg:flex-row w-full min-h-fit gap-0 lg:gap-5 border-transparent hover:border dark:lg:hover:border-t-blue-900 dark:lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg lg:hover:bg-slate-100/50 lg:hover:border-t-blue-200">
-      <div className="flex flex-col space-y-1.5 h-full w-full p-0">
-        <div className=" font-semibold leading-none tracking-tight text-2xl text-slate-400 whitespace-nowrap">
+    <li className="flex">
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group grid pb-1 transition-all sm:grid-cols-11 sm:gap-8 md:gap-4 lg:group-hover:opacity-10 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:p-6 hover:bg-neutral-900/30 rounded-md"
+      >
+        <div className="uppercase font-semibold text-xs text-neutral-500 sm:col-span-3 mb-2 mt-1">
           {period}
         </div>
-      </div>
-      <div className="flex flex-col p-6 pt-0">
-        <p className="text-foreground font-bold">
-          {position} • {company}
-        </p>
-        {description.map((paragraph, index) => (
-          <p key={index} className="text-slate-400 text-sm font-bold">
-            {paragraph}
+        <div className="flex flex-col sm:col-span-8">
+          <p className="font-medium text-neutral-200">
+            <span>{position}</span> -{" "}
+            <span className="underline">{company}</span>
           </p>
-        ))}
-        <div className="flex-wrap gap-2 flex items-center p-6 pt-0">
-          {skills.map((skill, index) => (
-            <ExperienceBadge key={index}>{skill}</ExperienceBadge>
-          ))}
+          {description.length > 0 ? (
+            <ol className="mt-2 text-neutral-400 text-sm list-disc list-inside">
+              {description.map((paragraph, index) => (
+                <li key={company + "description" + index}>{paragraph}</li>
+              ))}
+            </ol>
+          ) : null}
+
+          {skills.length > 0 ? (
+            <ol className="mt-2 flex flex-wrap gap-1.5">
+              {skills.map((skill, index) => (
+                <ExperienceBadge key={company + "skill" + index}>
+                  {skill}
+                </ExperienceBadge>
+              ))}
+            </ol>
+          ) : null}
         </div>
-      </div>
-    </div>
+      </a>
+    </li>
   );
 }
