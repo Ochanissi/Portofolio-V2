@@ -18,7 +18,7 @@ export function ExperienceCard(props: ExperienceCardProps) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="group grid pb-1 transition-all sm:grid-cols-11 sm:gap-8 md:gap-4 lg:group-hover:opacity-10 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:p-6 hover:bg-neutral-900/30 rounded-md duration-150 ease-in w-full"
+        className="group grid transition-all sm:grid-cols-11 sm:gap-8 md:gap-4 lg:group-hover:opacity-10 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:p-6 lg:hover:bg-neutral-900/30 rounded-md duration-150 ease-in w-full"
       >
         <div className="uppercase font-semibold text-xs text-neutral-500 sm:col-span-3 mb-2 mt-1">
           {period}

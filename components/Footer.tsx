@@ -3,27 +3,45 @@ export default function Footer() {
     <section className="flex flex-col gap-4 lg:px-6">
       <p className="text-sm text-start text-neutral-500">
         Based on{" "}
-        <a className="text-neutral-300" href="https://brittanychiang.com">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://brittanychiang.com"
+        >
           Brittany Chiang
         </a>{" "}
         and{" "}
-        <a className="text-neutral-300" href="https://meikopoulos.com">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://meikopoulos.com"
+        >
           Alexander Meikopoulos
         </a>
         &#39;s websites. Coded in{" "}
-        <a className="text-neutral-300" href="https://code.visualstudio.com/">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://code.visualstudio.com/"
+        >
           Visual Studio Code.
         </a>{" "}
         Built with{" "}
-        <a className="text-neutral-300" href="https://nextjs.org/">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://nextjs.org/"
+        >
           Next.js
         </a>
         ,{" "}
-        <a className="text-neutral-300" href="https://tailwindcss.com/">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://tailwindcss.com/"
+        >
           Tailwind CSS
         </a>
         , deployed with{" "}
-        <a className="text-neutral-300" href="https://vercel.com/">
+        <a
+          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
+          href="https://vercel.com/"
+        >
           Vercel
         </a>
         .
