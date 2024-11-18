@@ -1,36 +1,41 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-const useActiveSection = (sectionIds: string[]): string => {
+const useActiveSection = (sectionIds: string[], offset: number = 100) => {
   const [activeSection, setActiveSection] = useState<string>("");
+  const activeSectionRef = useRef("");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.7 }
-    );
+    const handleScroll = () => {
+      let currentActiveSection = "";
 
-    // Clean up observer when component unmounts
-    const observeSections = () => {
-      sectionIds.forEach((sectionId) => {
-        const section = document.getElementById(sectionId);
+      for (let i = 0; i < sectionIds.length; i++) {
+        const section = document.getElementById(sectionIds[i]);
         if (section) {
-          observer.observe(section);
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= offset && rect.bottom >= offset) {
+            currentActiveSection = sectionIds[i];
+            break;
+          }
         }
-      });
+      }
+
+      if (
+        currentActiveSection &&
+        currentActiveSection !== activeSectionRef.current
+      ) {
+        activeSectionRef.current = currentActiveSection;
+        setActiveSection(currentActiveSection);
+      }
     };
 
-    observeSections();
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      observer.disconnect(); // Clean up the observer
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [sectionIds]); // Run the effect again if sectionIds change
+  }, [sectionIds, offset]);
 
   return activeSection;
 };
