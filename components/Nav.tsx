@@ -29,7 +29,7 @@ const contactItems: ContactItem[] = [
   { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/mirelbitoi/" },
   { icon: <EmailIcon />, href: "mailto:mirelbitoi@ochanissi.com" },
   { icon: <PhoneIcon />, href: "tel:+40729223562" },
-  { icon: <Resume />, href: "Mirel_Bitoi_Resume.pdf/" },
+  { icon: <Resume />, href: "Mirel_Bitoi_Resume.pdf" },
 ];
 
 const getNavItemClasses = (activeSection: string, href: string) => {
@@ -91,7 +91,8 @@ export default function Nav() {
             <a
               className="flex text-foreground w-[28px] h-[28px] hover:text-neutral-500 transition-colors duration-150 ease-in"
               href={item.href}
-              {...(item.href.endsWith("/")
+              {...(item.href.startsWith("https://") ||
+              item.href.endsWith(".pdf")
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
             >
