@@ -3,13 +3,9 @@ import useActiveSection from "@/hooks/useActiveSection";
 import Link from "next/link";
 import GitHubIcon from "@/public/icons/GitHub.svg";
 import EmailIcon from "@/public/icons/Email.svg";
-import LanguageIcon from "@/public/icons/Language.svg";
 import LinkedinIcon from "@/public/icons/LinkedIn.svg";
 import PhoneIcon from "@/public/icons/Phone.svg";
 import Resume from "@/public/icons/Resume.svg";
-// import { Button } from "@/components/ui/button";
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-// import { Github, Linkedin } from "lucide-react";
 
 const sections = ["about", "experience", "contact"];
 
@@ -21,7 +17,6 @@ type NavItem = {
 const navItems: NavItem[] = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
 ];
 
 type ContactItem = {
@@ -32,7 +27,6 @@ type ContactItem = {
 const contactItems: ContactItem[] = [
   { icon: <GitHubIcon />, href: "https://github.com/Ochanissi/" },
   { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/mirelbitoi/" },
-  // { icon: <LanguageIcon />, href: "https://www.ochanissi.com/" },
   { icon: <EmailIcon />, href: "mailto:mirelbitoi@ochanissi.com" },
   { icon: <PhoneIcon />, href: "tel:+40729223562" },
   { icon: <Resume />, href: "Mirel_Bitoi_Resume.pdf/" },
@@ -56,9 +50,7 @@ const getNavItemClasses = (activeSection: string, href: string) => {
 };
 
 export default function Nav() {
-  const activeSection = useActiveSection(sections);
-
-  console.log("fmm activeSection", { activeSection });
+  const activeSection = useActiveSection(sections, 100);
 
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
@@ -97,7 +89,7 @@ export default function Nav() {
         {contactItems.map((item, index) => (
           <li key={`nav-contact-${index}`}>
             <a
-              className="flex text-foreground w-[28px] h-[28px] hover:text-neutral-400 cursor-pointer transition-colors duration-150 ease-in"
+              className="flex text-foreground w-[28px] h-[28px] hover:text-neutral-500 transition-colors duration-150 ease-in"
               href={item.href}
               {...(item.href.endsWith("/")
                 ? { target: "_blank", rel: "noopener noreferrer" }

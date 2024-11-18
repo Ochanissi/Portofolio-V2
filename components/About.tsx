@@ -2,53 +2,52 @@
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-16 ">
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background/0 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only">
-          About
-        </h2>
-      </div>
-      <div className="flex flex-col gap-4 lg:px-6">
+    <section
+      id="about"
+      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+    >
+      <div className="flex flex-col gap-4 lg:px-6 text-foreground">
         <p>
-          Throughout my journey from coding to design, I've been guided by a
-          simple belief:{" "}
-          <span className="text-white">
-            technology should feel natural and intuitive.
-          </span>{" "}
-          At the crossroads of AI, Web3, and Finance, I focus on creating user
-          experiences that make complex ideas accessible.
+          I’m Mirel, a self-taught full-stack developer with over 4 years of
+          experience.
         </p>
         <p>
-          Currently, I'm leading product design at a stealth AI startup that's
-          rethinking how we interact with money. I'm also steering the design
-          team at{" "}
+          I began my journey as a frontend developer at{" "}
           <a
-            className="no-wrap text-primary dark:text-white"
-            href="https://vela.exchange"
+            className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
+            href="https://www.linkedin.com/company/get-sessions/"
             target="blank"
             rel="noopener noreferrer"
           >
-            Vela Exchange
+            Sessions
           </a>
-          , a decentralized platform for perpetual trading. As a co-founder,
-          designer, and developer at{" "}
+          , a startup with the core project focused on a complex video
+          conferencing tool, enhanced with various modules. Over nearly 4 years,
+          I expanded my role, and for the final 2 years, I fully transitioned to
+          a full-stack developer position, contributing across both frontend and
+          backend.
+        </p>
+        <p>
+          Currently, I'm working at{" "}
           <a
-            className="no-wrap text-primary dark:text-white"
-            href="https://swoop.exchange"
+            className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
+            href="https://www.linkedin.com/company/webitfactory/"
             target="blank"
             rel="noopener noreferrer"
           >
-            Swoop Exchange
-          </a>
-          , I've helped build a meta-aggregation engine used daily by thousands
-          of users.
+            WebitFactory
+          </a>{" "}
+          on a gaming platform project, where I develop new features, integrate
+          third-party providers, and implement Web3 functionalities.
         </p>
         <p>
-          Across all the applications I've been involved with, I've had the
-          privilege to contribute in facilitating billions in transaction
-          volume. I believe in making technology feel human—designing
-          applications and experiences that are seamless extensions of
-          ourselves, serving real needs with simplicity and clarity.
+          I'm passionate about continuously improving my abilities and thrive in
+          dynamic, fast-paced environments. My adaptability enables me to
+          integrate smoothly into any team, tech stack, or project.
+        </p>
+        <p>
+          I value clean implementations, strong UI/UX, and a culture where skill
+          is appreciated, expected, and rewarded.
         </p>
       </div>
     </section>

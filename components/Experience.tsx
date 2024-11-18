@@ -79,7 +79,10 @@ const content: ExperienceCardProps[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="scroll-mt-16 lg:mt-16">
+    <section
+      id="experience"
+      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+    >
       <ol className="group/list flex flex-col gap-4">
         {content.map((job, index) => (
           <ExperienceCard {...job} key={`experience-card-${index}`} />

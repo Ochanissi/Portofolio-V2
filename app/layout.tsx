@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
+// import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,3 +52,5 @@ export default function RootLayout({
 // text-white/80
 // favicon
 // logo si banner alb si albastru - alb - negru
+// mobile
+// tablet
