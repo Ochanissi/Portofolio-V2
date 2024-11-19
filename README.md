@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portofolio V2
+
+Personal portfolio built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+- npm
+
+```
+npm install npm@latest -g
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+git clone https://github.com/Ochanissi/Portofolio-V2.git
+```
 
-## Learn More
+2. Run npm install inside project root directory
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Start the server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+4. Explore
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+Enjoy! :)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Built With
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- TypeScript
+
+## Authors
+
+- **Mirel Bitoi** - _Initial work_ - [Ochanissi](https://github.com/Ochanissi)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+- [Brittany Chiang](https://brittanychiang.com) - Based on their work
+- [Alexander Meikopoulos](https://meikopoulos.com) - Based on their work

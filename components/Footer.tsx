@@ -18,15 +18,7 @@ export default function Footer() {
         >
           Alexander Meikopoulos
         </a>
-        &#39;s websites. Coded in{" "}
-        <a
-          className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
-          href="https://code.visualstudio.com/"
-          aria-label="Visual Studio Code (opens in a new tab)"
-        >
-          Visual Studio Code.
-        </a>{" "}
-        Built with{" "}
+        &#39;s websites. Built with{" "}
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://nextjs.org/"
