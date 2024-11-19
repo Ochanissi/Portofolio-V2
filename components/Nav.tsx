@@ -76,11 +76,9 @@ export default function Nav() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div className="flex flex-col">
-        <Link href="/">
-          <h1 className="text-4xl font-bold sm:text-5xl text-white">
-            Mirel Bițoi
-          </h1>
-        </Link>
+        <h1 className="text-4xl font-bold sm:text-5xl text-white">
+          <Link href="/">Mirel Bițoi</Link>
+        </h1>
         <h2 className="mt-3 text-lg font-medium sm:text-xl">
           Full-Stack Developer
         </h2>
