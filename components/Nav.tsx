@@ -22,14 +22,35 @@ const navItems: NavItem[] = [
 type ContactItem = {
   icon: JSX.Element;
   href: string;
+  label: string;
 };
 
 const contactItems: ContactItem[] = [
-  { icon: <GitHubIcon />, href: "https://github.com/Ochanissi/" },
-  { icon: <LinkedinIcon />, href: "https://www.linkedin.com/in/mirelbitoi/" },
-  { icon: <EmailIcon />, href: "mailto:mirelbitoi@ochanissi.com" },
-  { icon: <PhoneIcon />, href: "tel:+40729223562" },
-  { icon: <Resume />, href: "Mirel_Bitoi_Resume.pdf" },
+  {
+    icon: <GitHubIcon />,
+    href: "https://github.com/Ochanissi/",
+    label: "GitHub (opens in a new tab)",
+  },
+  {
+    icon: <LinkedinIcon />,
+    href: "https://www.linkedin.com/in/mirelbitoi/",
+    label: "Linkedin (opens in a new tab)",
+  },
+  {
+    icon: <EmailIcon />,
+    href: "mailto:mirelbitoi@ochanissi.com",
+    label: "Email address (opens the email prompt)",
+  },
+  {
+    icon: <PhoneIcon />,
+    href: "tel:+40729223562",
+    label: "Phone number (opens the phone prompt)",
+  },
+  {
+    icon: <Resume />,
+    href: "Mirel_Bitoi_Resume.pdf",
+    label: "Resume (opens in a new tab)",
+  },
 ];
 
 const getNavItemClasses = (activeSection: string, href: string) => {
@@ -67,7 +88,10 @@ export default function Nav() {
           Full-Stack Developer with 4+ years of hands-on experience creating
           end-to-end web applications that deliver seamless user experiences.
         </p>
-        <nav className="nav hidden lg:block">
+        <nav
+          className="nav hidden lg:block"
+          aria-label="In-app navigation links"
+        >
           <ul className="flex flex-col w-max gap-6 uppercase text-xs font-medium mt-16">
             {navItems.map((item) => {
               const { linkClass, indicatorClass, textClass } =
@@ -85,7 +109,7 @@ export default function Nav() {
         </nav>
       </div>
 
-      <ul className="flex items-center gap-5 mt-8">
+      <ul className="flex items-center gap-5 mt-8" aria-label="Contact links">
         {contactItems.map((item, index) => (
           <li key={`nav-contact-${index}`}>
             <a
@@ -95,6 +119,7 @@ export default function Nav() {
               item.href.endsWith(".pdf")
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
+              aria-label={item.label}
             >
               {item.icon}
             </a>

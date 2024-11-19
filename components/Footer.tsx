@@ -6,6 +6,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://brittanychiang.com"
+          aria-label="Brittany Chiang's website (opens in a new tab)"
         >
           Brittany Chiang
         </a>{" "}
@@ -13,6 +14,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://meikopoulos.com"
+          aria-label="Alexander Meikopoulos's website (opens in a new tab)"
         >
           Alexander Meikopoulos
         </a>
@@ -20,6 +22,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://code.visualstudio.com/"
+          aria-label="Visual Studio Code (opens in a new tab)"
         >
           Visual Studio Code.
         </a>{" "}
@@ -27,6 +30,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://nextjs.org/"
+          aria-label="Next.js (opens in a new tab)"
         >
           Next.js
         </a>
@@ -34,6 +38,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://tailwindcss.com/"
+          aria-label="Tailwind CSS (opens in a new tab)"
         >
           Tailwind CSS
         </a>
@@ -41,6 +46,7 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://vercel.com/"
+          aria-label="Vercel (opens in a new tab)"
         >
           Vercel
         </a>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,17 +40,11 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>{children}</body>
       {/* // TODO: Mirel */}
-      {/* <Analytics /> */}
+      <Analytics />
     </html>
   );
 }
 
 // TODO: Mirel
-// TODOs
-// aria labels
 
-// text-white/80
-// favicon
-// logo si banner alb si albastru - alb - negru
-// mobile
-// tablet
+// github readme si mit

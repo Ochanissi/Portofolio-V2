@@ -82,6 +82,7 @@ export default function Experience() {
     <section
       id="experience"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      aria-label="My experience"
     >
       <ol className="group/list flex flex-col gap-12 lg:gap-4">
         {content.map((job, index) => (
@@ -94,6 +95,7 @@ export default function Experience() {
           target="_blank"
           rel="noopener noreferrer"
           className="items-center font-medium text-foreground hover:underline"
+          aria-label="Resume (opens in a new tab)"
         >
           View Full Resume
         </a>

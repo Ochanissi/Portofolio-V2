@@ -5,6 +5,7 @@ export default function About() {
     <section
       id="about"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      aria-label="About me"
     >
       <div className="flex flex-col gap-4 lg:px-6 text-foreground">
         <p>
@@ -18,6 +19,7 @@ export default function About() {
             href="https://www.linkedin.com/company/get-sessions/"
             target="blank"
             rel="noopener noreferrer"
+            aria-label="Sessions (opens in a new tab)"
           >
             Sessions
           </a>
@@ -34,6 +36,7 @@ export default function About() {
             href="https://www.linkedin.com/company/webitfactory/"
             target="blank"
             rel="noopener noreferrer"
+            aria-label="WebitFactory (opens in a new tab)"
           >
             WebitFactory
           </a>{" "}
