@@ -1,4 +1,5 @@
 "use client";
+import type { JSX } from "react";
 import useActiveSection from "@/hooks/useActiveSection";
 import Link from "next/link";
 import GitHubIcon from "@/public/icons/GitHub.svg";
@@ -83,7 +84,7 @@ export default function Nav() {
           Full-Stack Developer
         </h2>
         <p className="mt-4 text-foreground/80 max-w-[360px]">
-          Full-Stack Developer with 4+ years of hands-on experience creating
+          Full-Stack Developer with 5+ years of hands-on experience creating
           end-to-end web applications that deliver seamless user experiences.
         </p>
         <nav

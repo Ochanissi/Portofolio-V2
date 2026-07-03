@@ -1,17 +1,62 @@
+"use client";
+
 import {
   ExperienceCard,
   ExperienceCardProps,
 } from "@/components/ui/ExperienceCard";
+import { ExperienceLink } from "@/components/ui/ExperienceLink";
 
 const content: ExperienceCardProps[] = [
   {
-    period: "Aug 2024 - Present",
+    period: "Dec 2024 - Present",
+    position: "Full-Stack Developer",
+    company: "Archbee",
+    description: [
+      <>
+        Owned the end-to-end development of core product features for a
+        collaborative knowledge base platform, leading a complete web app UI
+        redesign while managing the public{" "}
+        <ExperienceLink
+          href="https://www.npmjs.com/package/@archbee/app-widget"
+          aria-label="@archbee/app-widget on npm (opens in a new tab)"
+        >
+          @archbee/app-widget
+        </ExperienceLink>{" "}
+        package and refactoring its bulk PDF export workflows, file manager, and
+        auto-publish pipelines.
+      </>,
+      <>
+        Developed and published the public Archbee CLI (
+        <ExperienceLink
+          href="https://www.npmjs.com/package/@archbee/cli"
+          aria-label="@archbee/cli on npm (opens in a new tab)"
+        >
+          @archbee/cli
+        </ExperienceLink>
+        ) npm package, enabling local workspace previews and full CRUD
+        documentation workflows via public APIs.
+      </>,
+      "Built custom rich-text editor blocks and plugins using Plate.js / Slate, integrating real-time collaborative synchronization, autocomplete systems, and interactive content widgets.",
+    ],
+    skills: [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Express.js",
+      "PostgreSQL",
+      "Plate.js / Slate",
+      "TanStack",
+      "Tailwind CSS",
+    ],
+    href: "https://www.linkedin.com/company/archbee/",
+  },
+  {
+    period: "Aug 2024 - Dec 2024",
     position: "Full-Stack Developer",
     company: "WebitFactory",
     description: [
-      "Developed features for an online gaming platform, integrating third-party providers and implementing raffles, promo codes, and Web3 functionalities.",
-      "Worked on both front-end (Next.js, Material UI, Tailwind CSS) and back-end (NestJS, Prisma, Redis, PostgreSQL), ensuring high-quality and responsive solutions.",
-      "Handled bug fixes and maintained platform stability.",
+      "Engineered full-stack features for an online gaming platform using Next.js and NestJS, integrating third-party providers, raffles, promo codes, and Web3 functionalities.",
+      "Optimized application performance, resolving critical bugs to ensure continuous platform stability.",
     ],
     skills: [
       "TypeScript",
@@ -30,10 +75,8 @@ const content: ExperienceCardProps[] = [
     position: "Full-Stack Developer",
     company: "Sessions",
     description: [
-      "Implemented key features for the video conferencing platform, including the onboarding flow, authentication flow, and core features like contacts and notifications. Developed various widgets such as audio player, polls, chat, Q&A, participants, and transcript.",
-      "Built reusable components and translated designs into responsive code using TypeScript, React.js, Next.js, Tailwind CSS, Material UI, JSS, and SCSS.",
-      "Worked on core modules, such as event, calendar, and booking, and integrated third-party services like Notion and Evernote.",
-      "Developed and maintained backend features using Express.js, GraphQL with Apollo, PostgreSQL, Prisma, and Redis.",
+      "Implemented core video conferencing features, including user onboarding, authentication flows, and interactive widgets (audio player, polls, chat, Q&A).",
+      "Developed core integration modules to seamlessly connect platform services with third-party platforms like Notion and Evernote.",
     ],
     skills: [
       "TypeScript",
@@ -55,10 +98,8 @@ const content: ExperienceCardProps[] = [
     position: "Project / Product Manager",
     company: "Premium IT Technologies",
     description: [
-      "Managed and coordinated the department’s integration projects.",
-      "Integration of new payment methods.",
-      "Creation and maintenance of the cashier's routing and fraud rules.",
-      "Constant optimization of the cashier, as well as all current payment methods.",
+      "Managed and coordinated the department's core integration projects and new payment method deployments.",
+      "Created, optimized, and maintained the platform's cashier routing logic and fraud prevention rules.",
     ],
     skills: ["Project Management", "Planning", "Leadership", "Testing & QA"],
     href: "https://www.linkedin.com/company/premium-it-technologies/",
@@ -68,10 +109,7 @@ const content: ExperienceCardProps[] = [
     position: "Game Developer & QA Tester",
     company: "Freelance",
     description: [
-      "Developed new game features and collaborated with the content team to enhance Unity-based multiplayer games.",
-      "Built client-side components and improved game performance using JavaScript and Unity.",
-      "Made game variables accessible to players, allowing them to customize and personalize their gameplay experience.",
-      "Tested and debugged games to ensure quality, while providing support to players and developers for smooth gameplay.",
+      "Developed client and server-side features for Unity-based multiplayer games while managing full-cycle QA testing and debugging.",
     ],
     skills: ["JavaScript", "Testing & QA", "Customer Support", "Unity"],
   },
