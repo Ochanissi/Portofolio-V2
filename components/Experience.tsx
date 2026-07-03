@@ -17,10 +17,10 @@ const content: ExperienceCardProps[] = [
         collaborative knowledge base platform, leading a complete web app UI
         redesign while managing the public{" "}
         <ExperienceLink
-          href="https://www.npmjs.com/package/@archbee/cli"
-          aria-label="@archbee/cli on npm (opens in a new tab)"
+          href="https://www.npmjs.com/package/@archbee/app-widget"
+          aria-label="@archbee/app-widget on npm (opens in a new tab)"
         >
-          @archbee/cli
+          @archbee/app-widget
         </ExperienceLink>{" "}
         package and refactoring its bulk PDF export workflows, file manager, and
         auto-publish pipelines.
@@ -28,10 +28,10 @@ const content: ExperienceCardProps[] = [
       <>
         Developed and published the public Archbee CLI (
         <ExperienceLink
-          href="https://www.npmjs.com/package/@archbee/app-widget"
-          aria-label="@archbee/app-widget on npm (opens in a new tab)"
+          href="https://www.npmjs.com/package/@archbee/cli"
+          aria-label="@archbee/cli on npm (opens in a new tab)"
         >
-          @archbee/app-widget
+          @archbee/cli
         </ExperienceLink>
         ) npm package, enabling local workspace previews and full CRUD
         documentation workflows via public APIs.

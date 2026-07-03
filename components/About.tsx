@@ -53,22 +53,23 @@ export default function About() {
           development of core product features, maintain the public{" "}
           <a
             className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
-            href="https://www.npmjs.com/package/@archbee/app-widget"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="@archbee/app-widget on npm (opens in a new tab)"
-          >
-            <code>@archbee/app-widget</code>
-          </a>{" "}
-          and{" "}
-          <a
-            className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
             href="https://www.npmjs.com/package/@archbee/cli"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="@archbee/cli on npm (opens in a new tab)"
           >
             <code>@archbee/cli</code>
+          </a>{" "}
+          
+          and{" "}
+          <a
+            className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
+            href="https://www.npmjs.com/package/@archbee/app-widget"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="@archbee/app-widget on npm (opens in a new tab)"
+          >
+            <code>@archbee/app-widget</code>
           </a>{" "}
           packages, and build custom rich-text editor blocks with real-time
           collaboration using Plate.js and Slate.
