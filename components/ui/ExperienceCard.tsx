@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 import { ExperienceBadge } from "./ExperienceBadge";
 
 export type ExperienceCardProps = {
   period: string;
   position: string;
-  description: string[];
+  description: ReactNode[];
   company: string;
   skills: string[];
   href?: string;
