@@ -60,7 +60,6 @@ export default function About() {
           >
             <code>@archbee/cli</code>
           </a>{" "}
-          
           and{" "}
           <a
             className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
