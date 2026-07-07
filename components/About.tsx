@@ -60,7 +60,6 @@ export default function About() {
           >
             <code>@archbee/cli</code>
           </a>{" "}
-          
           and{" "}
           <a
             className="no-wrap text-primary text-white underline hover:text-neutral-400 transition-colors duration-150 ease-in"
@@ -72,7 +71,7 @@ export default function About() {
             <code>@archbee/app-widget</code>
           </a>{" "}
           packages, and build custom rich-text editor blocks with real-time
-          collaboration using Plate.js and Slate.
+          collaboration using Plate and Slate.
         </p>
         <p>
           I'm passionate about coding and crafting elegant, responsive user

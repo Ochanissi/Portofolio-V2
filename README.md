@@ -1,6 +1,6 @@
 # Portofolio V2
 
-Personal portfolio built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+Personal portfolio built with [Next](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Enjoy! :)
 
 ## Built With
 
-- [Next.js](https://nextjs.org/)
+- [Next](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - TypeScript
 
