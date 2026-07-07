@@ -22,9 +22,9 @@ export default function Footer() {
         <a
           className="text-neutral-300 hover:text-white transition-colors duration-150 ease-in"
           href="https://nextjs.org/"
-          aria-label="Next.js (opens in a new tab)"
+          aria-label="Next (opens in a new tab)"
         >
-          Next.js
+          Next
         </a>
         ,{" "}
         <a
